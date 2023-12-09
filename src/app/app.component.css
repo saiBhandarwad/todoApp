@@ -1,0 +1,67 @@
+.todo-container{
+    width: 400px;
+    height: 80vh;
+    box-shadow: 1px 1px 10px rgb(88, 88, 88), -1px -1px 10px rgb(93, 93, 93);
+}
+.todo-heading{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 500;
+}
+.add-todo-container{
+    margin: 40px 18px 5px 0;
+    text-align: center;
+}
+.add-todo-container input{
+    height: 30px;
+    width: 225px;
+    border: none;
+    border-right: none;
+    outline: none;
+    padding-left: 5px;
+    font-size: 16px;
+}
+.add-todo-wrapper{
+    border: 2px solid black;
+    height: 30px;
+    width: 260px;
+    display: flex;
+    margin: auto;
+}
+.add-btn{
+    padding: 5px;
+    cursor: pointer;
+}
+.todo-item-container{
+    text-align: center;
+    height: 70%;
+    overflow-y: scroll;
+    margin-top: 25px;
+}
+.todo-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin: 10px auto;
+    padding: 5px;
+    border: 2px solid slategray;
+}
+.todo-item input[type=checkbox]{
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+}
+.todo-item input[type=checkbox]:checked ~ .text marquee{
+    text-decoration: line-through;
+}
+.todo-item input[type=checkbox]:checked ~ .text{
+    text-decoration: line-through;
+}
+.text{
+    height: 25px;
+}
+.cross-btn{
+    cursor: pointer;
+}
